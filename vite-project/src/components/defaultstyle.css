@@ -1,0 +1,12 @@
+.styles-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .style-info {
+    border: 30px solid #ccc;
+    padding: 20px;
+    width: 125px;
+    text-align: center;
+  }

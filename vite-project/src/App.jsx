@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Navbar from './components/navbar';
 import ForeCast from './components/forecast';
+import StyleDefault from './components/defaultstyle';
 
 function App() {
   const [fashionSense, setFashionSense] = useState('');
