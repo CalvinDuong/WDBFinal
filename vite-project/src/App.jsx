@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import Navbar from './components/navbar';
+import ForeCast from './components/forecast';
+
 function App() {
   const [fashionSense, setFashionSense] = useState('');
 
@@ -17,6 +19,8 @@ function App() {
   return (
     <div className="App">
       <Navbar />
+      <h1> 7 Day Forecast</h1>
+      <ForeCast></ForeCast>
       <form onSubmit={handleSubmit}>
         <label>
           Describe your fashion sense:
