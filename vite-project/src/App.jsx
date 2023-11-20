@@ -16,7 +16,7 @@ function App() {
 
   return (
     <div className="App">
-      < Navbar />
+      <Navbar />
       <form onSubmit={handleSubmit}>
         <label>
           Describe your fashion sense:
