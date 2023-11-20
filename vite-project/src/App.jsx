@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Navbar from './components/navbar';
 import ForeCast from './components/forecast';
+import Footer from './components/footer';
 
 function App() {
   const [fashionSense, setFashionSense] = useState('');
@@ -29,6 +30,7 @@ function App() {
         </label>
         <button type="submit">Generate Outfit</button>
       </form>
+      <Footer />
     </div>
   );
 }
