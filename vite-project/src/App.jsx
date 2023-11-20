@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import Navbar from './components/navbar';
 function App() {
   const [fashionSense, setFashionSense] = useState('');
 
@@ -16,6 +16,7 @@ function App() {
 
   return (
     <div className="App">
+      < Navbar />
       <form onSubmit={handleSubmit}>
         <label>
           Describe your fashion sense:
@@ -28,3 +29,4 @@ function App() {
 }
 
 export default App;
+
