@@ -1,4 +1,8 @@
 import React, { useState } from 'react';
+import Navbar from './components/navbar';
+import ForeCast from './components/forecast';
+import StyleDefault from './components/defaultstyle';
+import Footer from './components/footer';
 
 function App() {
   const [fashionSense, setFashionSense] = useState('');
@@ -16,6 +20,11 @@ function App() {
 
   return (
     <div className="App">
+      <Navbar />
+      <h1> 7 Day Forecast</h1>
+      <ForeCast></ForeCast>
+      <h1> Pick A Style </h1>
+      <StyleDefault></StyleDefault>
       <form onSubmit={handleSubmit}>
         <label>
           Describe your fashion sense:
@@ -23,8 +32,10 @@ function App() {
         </label>
         <button type="submit">Generate Outfit</button>
       </form>
+      <Footer />
     </div>
   );
 }
 
 export default App;
+
