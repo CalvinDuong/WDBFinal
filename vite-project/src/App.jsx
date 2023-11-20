@@ -21,6 +21,7 @@ function App() {
       <Navbar />
       <h1> 7 Day Forecast</h1>
       <ForeCast></ForeCast>
+      <h1> Pick A Style </h1>
       <form onSubmit={handleSubmit}>
         <label>
           Describe your fashion sense:
