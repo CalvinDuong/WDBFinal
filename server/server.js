@@ -3,9 +3,12 @@ const app = express();
 const port = 3000;
 const dalleController = require('./controllers/dalleController.js'); // adjust the path according to your project structure
 
-app.get('/generate-outfit', async (req, res) => {
+
+app.get('/generateOutfit', async (req, res) => {
     try {
-        const image = await dalleController.generateImage(req.query);
+        const image = await dalleController.generateOutfit(req.query.outfitDescription);
+        console.log(req.query.outfitDescription);
+        console.log(image);
         res.send(image);
     } catch (error) {
         res.status(500).send({ error: error.toString() });
