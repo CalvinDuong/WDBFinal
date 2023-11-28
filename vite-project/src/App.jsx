@@ -3,6 +3,7 @@ import Navbar from './components/navbar';
 import ForeCast from './components/forecast';
 import StyleDefault from './components/defaultstyle';
 import Footer from './components/footer';
+import './App.css';
 
 function App() {
   const [fashionSense, setFashionSense] = useState('');
@@ -21,7 +22,6 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <h1> 7 Day Forecast</h1>
       <ForeCast></ForeCast>
       <h1> Pick A Style </h1>
       <StyleDefault></StyleDefault>

@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React, { useState, useEffect } from 'react';
+import './forecast.css';
 
 const weatherImages = {
   0: '../../icons/day.svg', // clear day
@@ -33,7 +34,7 @@ function DayOfWeek({ day, weatherImage, temperature }) {
     <div className="day-info">
       <h2>{day}</h2>
       <img src={weatherImage} alt={day} />
-      <p>{temperature}°F</p>
+      <h2>{temperature}°F</h2>
     </div>
   );
 }
@@ -61,10 +62,13 @@ function ForeCast() {
   }, []);
 
   return (
-    <div className="forecast-container">
-      {forecast.slice(0, 7).map(({ date, image_url, high }) => (
-        <DayOfWeek key={date} day={date} weatherImage={image_url} temperature={high} />
-      ))}
+    <div>
+      <h1>7 Day Forecast</h1>
+      <div className="forecast-container">
+        {forecast.slice(0, 7).map(({ date, image_url, high }, index) => (
+          <DayOfWeek key={date} day={date} weatherImage={image_url} temperature={high} style={{ '--i': index }} />
+        ))}
+      </div>
     </div>
   );
 }
