@@ -3,10 +3,23 @@ import Navbar from './components/navbar';
 import ForeCast from './components/forecast';
 import StyleDefault from './components/defaultstyle';
 import Footer from './components/footer';
-import './App.css';
+import axios from 'axios';
 
 function App() {
   const [fashionSense, setFashionSense] = useState('');
+  const [imageUrl, setImageUrl] = useState('');
+
+  function generateOutfit(fashionSense) {
+    // Call the API to generate the outfit
+    axios.get('http://localhost:3000/generateOutfit', { params: { outfitDescription: fashionSense } })
+      .then(response => {
+        console.log(response.data);
+        setImageUrl(response.data);
+      })
+      .catch(error => {
+        console.error('Error fetching data: ', error);
+      });
+  }
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -14,14 +27,10 @@ function App() {
     generateOutfit(fashionSense);
   };
 
-  const generateOutfit = (fashionSense) => {
-    // Logic to generate the outfit based on the user's fashion sense
-    console.log(`Generating outfit for fashion sense: ${fashionSense}`);
-  };
-
   return (
     <div className="App">
       <Navbar />
+      <h1> 7 Day Forecast</h1>
       <ForeCast></ForeCast>
       <h1> Pick A Style </h1>
       <StyleDefault></StyleDefault>
