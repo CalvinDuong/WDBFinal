@@ -11,10 +11,11 @@ function App() {
 
   function generateOutfit(fashionSense) {
     // Call the API to generate the outfit
+    console.log('beginning outfit generation');
     axios.get('http://localhost:3000/generateOutfit', { params: { outfitDescription: fashionSense } })
       .then(response => {
-        console.log(response.data);
-        setImageUrl(response.data);
+        console.log('response', response)
+        setImageUrl(response.data.url);
       })
       .catch(error => {
         console.error('Error fetching data: ', error);
@@ -41,6 +42,7 @@ function App() {
         </label>
         <button type="submit">Generate Outfit</button>
       </form>
+      {imageUrl && <img src={imageUrl} alt="Generated outfit" />}
       <Footer />
     </div>
   );

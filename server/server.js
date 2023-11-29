@@ -9,10 +9,7 @@ app.use(cors());
 app.get('/generateOutfit', async (req, res) => {
     try {
         const image = await dalleController.generateOutfit(req.query.outfitDescription);
-        console.log(req.query.outfitDescription);
-        console.log(image);
-        res.header("Access-Control-Allow-Origin", "*");
-        res.send(image);
+        res.send({ url: image.data[0].url });
     } catch (error) {
         res.status(500).send({ error: error.toString() });
     }
