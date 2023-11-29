@@ -33,7 +33,7 @@ function DayOfWeek({ day, weatherImage, temperature }) {
   return (
     <div className="day-info">
       <h2>{day}</h2>
-      <img src={weatherImage} alt={day} />
+      <img class= "pic" src={weatherImage} alt={day} />
       <h2>{temperature}°F</h2>
     </div>
   );
