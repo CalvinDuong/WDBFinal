@@ -3,7 +3,6 @@
   justify-content: space-around;
   align-items: stretch;
   width: 93%;
-  background-color: rgb(193, 247, 247);
   border-radius: 30px;
   height: 20vw;
   padding-top: 2vw;
@@ -11,14 +10,15 @@
 }
 .pic {
   width: 100px;
-
 }
 
 .day-info {
   display: flex;
   flex-direction: column;
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
   height: 100%;
-  width: 2%;
+  width: 3%;
   padding: 20px;
   text-align: center;
   padding-top: 2.5vw;
@@ -34,12 +34,10 @@
 
 h2 {
   margin: auto;
- 
-  
 }
 
 h1 {
-  text-align: center;;
+  text-align: center;
 }
 
 @keyframes fadeInUp {
@@ -56,6 +54,7 @@ h1 {
 .day-info {
   opacity: 0;
   animation: fadeInUp 1s ease-in-out forwards;
+  
 }
 
 .day-info:nth-child(1) {

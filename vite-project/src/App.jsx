@@ -4,6 +4,7 @@ import ForeCast from './components/forecast';
 import StyleDefault from './components/defaultstyle';
 import Footer from './components/footer';
 import axios from 'axios';
+import LoginPage from './components/login';
 
 function App() {
   const [fashionSense, setFashionSense] = useState('');
@@ -31,6 +32,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
+      <LoginPage />
       <h1> 7 Day Forecast</h1>
       <ForeCast></ForeCast>
       <h1> Pick A Style </h1>
