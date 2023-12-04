@@ -1,18 +1,27 @@
 .bottom-section {
     display: flex;
-    margin-left: 15px;
+    margin: 15px; 
 }
 
 .style-fit-buttons-container {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+}
+
+.random {
+    flex: 20%;
 }
 
 .left {
-    flex: 60%;
+    flex: 55%;
 }
 
 .right {
-    flex: 40%;
+    flex: 45%;
+    padding: 30px;
+}
+
+.outfit {
+    width: 100%;
+    border-radius: 20px;
 }
