@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import Navbar from './components/navbar';
 import ForeCast from './components/forecast';
-import StyleDefault from './components/defaultstyle';
+import Style from './components/style';
 import Footer from './components/footer';
 import axios from 'axios';
 import LoginPage from './components/login';
+import ColorScheme from './components/colorscheme';
 
 function App() {
   const [fashionSense, setFashionSense] = useState('');
@@ -35,8 +36,10 @@ function App() {
       <LoginPage />
       <h1> 7 Day Forecast</h1>
       <ForeCast></ForeCast>
-      <h1> Pick A Style </h1>
-      <StyleDefault></StyleDefault>
+      <h1> Color Scheme</h1>
+      <ColorScheme />
+      <h1> Style </h1>
+      <Style></Style>
       <form onSubmit={handleSubmit}>
         <label>
           Describe your fashion sense:
