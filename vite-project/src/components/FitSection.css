@@ -1,9 +1,9 @@
-.style-section {
+.fit-section {
     margin: 20px;
-    flex: 60%;
+    flex: 40%;
 }
 
-.style-button-bar {
+.fit-button-bar {
     display: flex;
     justify-content: space-between;
 }

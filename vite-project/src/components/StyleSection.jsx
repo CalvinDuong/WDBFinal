@@ -9,9 +9,9 @@ const styleIcons = [
 
 const StyleSection = () => {
     return (
-        <div>
-            <h1 className="color-title">Style</h1>
-            <div className="color-section">
+        <div className="style-section">
+            <h1 className="style-title">Style</h1>
+            <div className="style-button-bar">
                 {styleIcons.map((item, index) => (
                     <StyleButton icon={item.icon} name={item.style} onClick={null} />
                 ))}

@@ -1,5 +1,5 @@
 import StyleButton from "./styleButton";
-// import './FitSection.css'
+import './FitSection.css'
 
 const fitIcons = [
     { fit: 'fitted', icon: '../../public/icons/icons8-loose-jeans-96.png' },
@@ -8,9 +8,9 @@ const fitIcons = [
 
 const FitSection = () => {
     return (
-        <div>
-            <h1 className="color-title">Fit</h1>
-            <div className="color-section">
+        <div className="fit-section">
+            <h1 className="fit-title">Fit</h1>
+            <div className="fit-button-bar">
                 {fitIcons.map((item, index) => (
                     <StyleButton icon={item.icon} name={item.fit} onClick={null} />
                 ))}

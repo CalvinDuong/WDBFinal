@@ -10,6 +10,7 @@ import ColorSection from './components/colorSection';
 import ColoredButton from './components/ColoredButton';
 import StyleSection from './components/styleSection';
 import FitSection from './components/fitSection';
+import BottomSection from './components/BottomSection';
 
 function App() {
   const [fashionSense, setFashionSense] = useState('');
@@ -42,11 +43,14 @@ function App() {
       {/* <LoginPage /> */}
       <ForeCast />
       <ColorSection />
+      <BottomSection />
+      {/* <ColorSection />
       <StyleSection/>
       <FitSection />
       <ColoredButton width={'500px'} color={'#5ABCF2'} text={'Generate Outfit'}/>
       <ColoredButton width={'200px'} color={'#FF6060'} text={'Discard'}/>
-      <ColoredButton width={'200px'} color={'#71DC4C'} text={'Save'}/>
+      <ColoredButton width={'200px'} color={'#71DC4C'} text={'Save'}/> */}
+      
       {/* <form onSubmit={handleSubmit}>
         <label>
           Describe your fashion sense:

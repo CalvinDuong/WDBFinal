@@ -1,0 +1,18 @@
+.bottom-section {
+    display: flex;
+    margin-left: 15px;
+}
+
+.style-fit-buttons-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.left {
+    flex: 60%;
+}
+
+.right {
+    flex: 40%;
+}
