@@ -1,11 +1,15 @@
 import React, { useState } from 'react';
-import Navbar from './components/navbar';
-import ForeCast from './components/forecast';
-import Style from './components/style';
-import Footer from './components/footer';
+import Navbar from './components/Navbar';
+import ForeCast from './components/Forecast';
+import Footer from './components/Footer';
 import axios from 'axios';
-import LoginPage from './components/login';
-import ColorScheme from './components/colorscheme';
+import LoginPage from './components/Login';
+import StyleButton from './components/styleButton';
+import './App.css';
+import ColorSection from './components/colorSection';
+import ColoredButton from './components/ColoredButton';
+import StyleSection from './components/styleSection';
+import FitSection from './components/fitSection';
 
 function App() {
   const [fashionSense, setFashionSense] = useState('');
@@ -30,25 +34,28 @@ function App() {
     generateOutfit(fashionSense);
   };
 
+  const icon = '../../icons/day.svg';
+
   return (
     <div className="App">
       <Navbar />
-      <LoginPage />
-      <h1> 7 Day Forecast</h1>
-      <ForeCast></ForeCast>
-      <h1> Color Scheme</h1>
-      <ColorScheme />
-      <h1> Style </h1>
-      <Style></Style>
-      <form onSubmit={handleSubmit}>
+      {/* <LoginPage /> */}
+      <ForeCast />
+      <ColorSection />
+      <StyleSection/>
+      <FitSection />
+      <ColoredButton width={'500px'} color={'#5ABCF2'} text={'Generate Outfit'}/>
+      <ColoredButton width={'200px'} color={'#FF6060'} text={'Discard'}/>
+      <ColoredButton width={'200px'} color={'#71DC4C'} text={'Save'}/>
+      {/* <form onSubmit={handleSubmit}>
         <label>
           Describe your fashion sense:
           <input type="text" value={fashionSense} onChange={e => setFashionSense(e.target.value)} />
         </label>
         <button type="submit">Generate Outfit</button>
       </form>
-      {imageUrl && <img src={imageUrl} alt="Generated outfit" />}
-      <Footer />
+      {imageUrl && <img src={imageUrl} alt="Generated outfit" />} */}
+      {/* <Footer /> */}
     </div>
   );
 }

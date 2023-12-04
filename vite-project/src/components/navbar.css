@@ -1,47 +1,17 @@
 /* Navbar container */
 .nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white;
-    color: black; /* Text color */
-    padding: 15px 5%; /* Adjust padding as needed */
-    height: 75px;
-    margin-bottom: 30px;
-    border: 1px solid #ccc; /* Use a solid gray border */
-    border-radius: 10px; /* Add some border-radius for rounded corners */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for depth */
-  }
-    
-    
-    /* Title styles */
-    .navbar-title a{
-      font-size: 38px; /* Adjust the font size */
-      color: black; 
-      text-decoration: none;
-    }
-    
-    /* Links styles */
-    .navbar-links {
-      list-style: none;
-      display: flex;
-      gap: 20px; /* Adjust the gap between links */
-      margin: 0; /* Remove default list margin */
-    }
-    
-    .navbar-links a {
-      text-decoration: none;
-      font-size: 20px;
-      color: black;
-      padding: 10px 15px; /* Adjust padding for links */
-      transition: background-color 0.3s, transform 0.2s; /* Add smooth transitions for background color and scale */
-    }
-    
-    /* Hover effect */
-    .navbar-links a:hover {
-      background-color: #b5a3a3;
-      border-radius: 30px;
-      transform: scale(1.05); /* Add a scaling effect on hover */
-      color: rgb(0, 0, 0);
-    }
-        
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-title {
+  font-size: 4em;
+  margin: auto
+}

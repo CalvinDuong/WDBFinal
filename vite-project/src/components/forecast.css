@@ -2,41 +2,23 @@
   display: flex;
   justify-content: space-around;
   align-items: stretch;
-  width: 93%;
-  border-radius: 30px;
-  height: 20vw;
-  padding-top: 2vw;
-  margin: auto; 
-}
-.pic {
-  width: 100px;
+  width: 100%;
 }
 
 .day-info {
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Center vertically */
-  align-items: center; /* Center horizontally */
   height: 100%;
-  width: 3%;
+  width: 14%;
   padding: 20px;
   text-align: center;
-  padding-top: 2.5vw;
-  padding: 8px 5%; /* Adjust padding as needed */
-  height: 15vw;
-  
-  font-size: 15px;
-  /* border: 1px solid #ccc; Use a solid gray border */
-  border-radius: 10px; /* Add some border-radius for rounded corners */
-  box-shadow: 0 10px 5px rgba(0, 0, 0, 0.1);
-  background-color: aliceblue; /* Add a subtle box shadow for depth */
 }
 
 h2 {
-  margin: auto;
+  margin: 0;
 }
 
-h1 {
+.forecast-title {
   text-align: center;
 }
 
@@ -54,7 +36,6 @@ h1 {
 .day-info {
   opacity: 0;
   animation: fadeInUp 1s ease-in-out forwards;
-  
 }
 
 .day-info:nth-child(1) {
@@ -83,4 +64,8 @@ h1 {
 
 .day-info:nth-child(7) {
   animation-delay: 1.4s;
+}
+
+h2 { 
+  font-weight: 500;
 }
