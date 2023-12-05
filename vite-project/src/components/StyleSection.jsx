@@ -7,13 +7,13 @@ const styleIcons = [
     { style: 'athletic', icon: '../../icons/icons8-trainers-96.png' },
 ];
 
-const StyleSection = () => {
+const StyleSection = ({setStyle}) => {
     return (
         <div className="style-section">
             <h1 className="style-title">Style</h1>
             <div className="style-button-bar">
                 {styleIcons.map((item, index) => (
-                    <StyleButton icon={item.icon} name={item.style} onClick={null} />
+                    <StyleButton icon={item.icon} name={item.style} onClick={() => setStyle(item.style)} />
                 ))}
             </div>
         </div>
