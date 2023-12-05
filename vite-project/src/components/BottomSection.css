@@ -24,4 +24,18 @@
 .outfit {
     width: 100%;
     border-radius: 20px;
+    margin-top: 80px;
+    margin-bottom: 25px;
+    height: 80%;
+    object-fit: cover;
 }
+
+.discard-save-buttons {
+   display: flex;
+   align-items: center;
+   justify-content:space-between ;
+   
+   
+   
+}
+
