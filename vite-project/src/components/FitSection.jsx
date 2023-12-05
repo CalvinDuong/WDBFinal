@@ -2,8 +2,8 @@ import StyleButton from "./styleButton";
 import './FitSection.css'
 
 const fitIcons = [
-    { fit: 'fitted', icon: '../../public/icons/icons8-loose-jeans-96.png' },
-    { fit: 'loose', icon: '../../public/icons/icons8-tight-jeans-96.png' },
+    { fit: 'Fitted', icon: '../../public/icons/icons8-loose-jeans-96.png' },
+    { fit: 'Loose', icon: '../../public/icons/icons8-tight-jeans-96.png' },
 ];
 
 const FitSection = ({setFit}) => {

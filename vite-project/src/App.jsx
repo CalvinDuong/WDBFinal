@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import ForeCast from './components/Forecast';
-import Footer from './components/Footer';
 import ColorSection from './components/colorSection';
 import BottomSection from './components/BottomSection';
+import './App.css';
 
 function App() {
   const [imageUrl, setImageUrl] = useState('');

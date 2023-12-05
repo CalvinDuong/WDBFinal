@@ -2,9 +2,9 @@ import StyleButton from "./styleButton";
 import './StyleSection.css'
 
 const styleIcons = [
-    { style: 'casual', icon: '../../icons/icons8-clothes-96.png' },
-    { style: 'formal', icon: '../../icons/icons8-formal-outfit-96.png' },
-    { style: 'athletic', icon: '../../icons/icons8-trainers-96.png' },
+    { style: 'Casual', icon: '../../icons/icons8-clothes-96.png' },
+    { style: 'Formal', icon: '../../icons/icons8-formal-outfit-96.png' },
+    { style: 'Athletic', icon: '../../icons/icons8-trainers-96.png' },
 ];
 
 const StyleSection = ({setStyle}) => {
