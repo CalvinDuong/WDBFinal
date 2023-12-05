@@ -19,7 +19,7 @@ h2 {
 }
 
 .forecast-title {
-  text-align: center;
+  margin-left: 35px;
 }
 
 @keyframes fadeInUp {

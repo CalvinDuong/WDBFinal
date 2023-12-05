@@ -13,5 +13,9 @@
 
 .navbar-title {
   font-size: 4em;
-  margin: auto
+  margin: auto;
+}
+
+.navbar-title a {
+  color: black; 
 }

@@ -7,7 +7,7 @@ const PersonalStyle = () => {
         <div className='personal-style-section'>
             <h1>What's your personal style?</h1>
             <textarea id="personal-style" cols="70" rows="10" placeholder='Enter your style here'></textarea>
-            <ColoredButton color="#5ABCF2" text="Generate Outfit" fontSize="20px" />
+            <ColoredButton color="#5ABCF2" text="Generate Outfit" fontSize="20px" className = "generateButton" />
         </div>
     );
 };
