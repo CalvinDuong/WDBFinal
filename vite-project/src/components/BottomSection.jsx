@@ -20,10 +20,6 @@ const BottomSection = ({setStyle, setFit, color, style, fit, setImageUrl, imageU
             </div>
             <div className='right'>
                 <img src={imageUrl} alt="" className='outfit' />
-                <div className='discard-save-buttons'>
-                    <ColoredButton color="#FF6060" text="Discard" fontSize="20px" />
-                    <ColoredButton color="#71DC4C" text="Save Outfit" fontSize="20px" />
-                </div>
             </div>
 
         </div>
