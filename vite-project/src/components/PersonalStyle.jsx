@@ -28,7 +28,7 @@ const PersonalStyle = ({ color, style, fit, setImageUrl }) => {
 
     return (
         <div className='personal-style-section'>
-            <h1>What's your personal style?</h1>
+            <h1>Describe your outfit!</h1>
             <textarea id="personal-style" cols="70" rows="10" placeholder='Enter your style here' ref={textareaRef}></textarea>
             <ColoredButton color="#5ABCF2" text="Generate Outfit" fontSize="20px" className="generateButton" onClick={handleClick} />
             {/*{imageUrl && <img src={imageUrl} alt="Generated outfit" />} */}
