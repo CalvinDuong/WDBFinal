@@ -15,6 +15,9 @@ import BottomSection from './components/BottomSection';
 function App() {
   const [fashionSense, setFashionSense] = useState('');
   const [imageUrl, setImageUrl] = useState('');
+  const [color, setColor] = useState('');
+  const [style, setStyle] = useState('');
+  const [fit, setFit] = useState('');
 
   function generateOutfit(fashionSense) {
     // Call the API to generate the outfit
@@ -40,16 +43,13 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      {/* <LoginPage /> */}
       <ForeCast />
+
       <ColorSection />
       <BottomSection />
-      {/* <ColorSection />
-      <StyleSection/>
-      <FitSection />
-      <ColoredButton width={'500px'} color={'#5ABCF2'} text={'Generate Outfit'}/>
-      <ColoredButton width={'200px'} color={'#FF6060'} text={'Discard'}/>
-      <ColoredButton width={'200px'} color={'#71DC4C'} text={'Save'}/> */}
+
+      {/* color, fit, style */}
+      {setFashionSense }
       
       {/* <form onSubmit={handleSubmit}>
         <label>
@@ -58,6 +58,7 @@ function App() {
         </label>
         <button type="submit">Generate Outfit</button>
       </form>
+
       {imageUrl && <img src={imageUrl} alt="Generated outfit" />} */}
       {/* <Footer /> */}
     </div>

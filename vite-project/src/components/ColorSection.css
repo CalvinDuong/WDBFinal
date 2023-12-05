@@ -9,3 +9,6 @@
 .color-title {
     margin-left: 35px;
 }
+.selected {
+    box-shadow: 0 0 0 2px blue;
+}
