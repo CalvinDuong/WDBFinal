@@ -39,8 +39,6 @@ app.post('/login', (req, res) => {
     }
 });
 
-
-
 app.get('/generateOutfit', async (req, res) => {
     try {
         const image = await dalleController.generateOutfit(req.query.outfitDescription);
@@ -53,15 +51,6 @@ app.get('/generateOutfit', async (req, res) => {
 //JUST FOR TESTING DALL-E
 app.get('/', (req, res) => {
     res.send('Hello World!')
-});
-
-app.get('/outfits', (req, res) => {
-    res.send('Hello World!')
-});
-
-app.get('/', (req, res) => {
-    res.send('Hello World!')
-});
 
 app.listen(port, () => {
     console.log(`Server listening at http://localhost:${port}`);
