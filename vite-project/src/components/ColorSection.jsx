@@ -20,6 +20,7 @@ const ColoredCircle = ({ hexCode }) => {
         width: '50px',
         height: '50px',
         boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+        marginBottom: '25px'
     };
 
     return <div style={circleStyle} />;
