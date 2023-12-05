@@ -9,7 +9,7 @@ const styleIcons = [
 
 const StyleSection = ({setStyle}) => {
     return (
-        <div className="style-section">
+        <div className='style-section'>
             <h1 className="style-title">Style</h1>
             <div className="style-button-bar">
                 {styleIcons.map((item, index) => (
@@ -21,3 +21,4 @@ const StyleSection = ({setStyle}) => {
 };
 
 export default StyleSection;
+

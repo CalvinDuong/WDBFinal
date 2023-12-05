@@ -5,7 +5,7 @@ function Navbar() {
   return (
     <div className="nav">
       <div className="navbar-title">
-        <a href="/home">Weather Wear</a>
+        <a href="/home">Weather Wear AI</a>
       </div>
     </div>
   );

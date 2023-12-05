@@ -28,7 +28,7 @@ const ColoredCircle = ({ hexCode }) => {
 
 const ColorSection = ({setColor}) => {
     return (
-        <div>
+        <div className="full-color-section">
             <h1 className="color-title"> Color Scheme</h1>
             <div className="color-section">
                 {colorCodes.map((item, index) => (

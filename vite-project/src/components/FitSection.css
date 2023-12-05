@@ -1,9 +1,24 @@
 .fit-section {
     margin: 20px;
     flex: 40%;
+    animation: slideUp 2s forwards;
+    animation-delay: 5s;
+    opacity: 0;
 }
 
 .fit-button-bar {
     display: flex;
     justify-content: space-between;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

@@ -22,9 +22,24 @@ textarea {
     flex-direction: column;
     margin-left: 20px;  
     margin-top: 25px;
+    animation: slideUp 2s forwards;
+    animation-delay: 6s;
+    opacity: 0;
 }
 
 .generateButton {
     margin-top: 20px;
     color: white; 
+}
+
+@keyframes slideUp {
+from {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+to {
+    opacity: 1;
+    transform: translateY(0);
+}
 }
