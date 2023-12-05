@@ -6,13 +6,13 @@ const fitIcons = [
     { fit: 'loose', icon: '../../public/icons/icons8-tight-jeans-96.png' },
 ];
 
-const FitSection = () => {
+const FitSection = ({setFit}) => {
     return (
         <div className="fit-section">
             <h1 className="fit-title">Fit</h1>
             <div className="fit-button-bar">
                 {fitIcons.map((item, index) => (
-                    <StyleButton icon={item.icon} name={item.fit} onClick={null} />
+                    <StyleButton icon={item.icon} name={item.fit} onClick={() => setFit(item.fit)} />
                 ))}
             </div>
         </div>

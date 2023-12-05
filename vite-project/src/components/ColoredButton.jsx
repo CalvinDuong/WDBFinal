@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ColoredButton = ({ color, text, fontSize }) => {
+const ColoredButton = ({ color, text, fontSize, className, onClick }) => {
   const buttonStyle = {
     background: color,
     borderRadius: '20px',
@@ -14,7 +14,11 @@ const ColoredButton = ({ color, text, fontSize }) => {
     marginTop: '20px',
   };
 
-  return <button style={buttonStyle}>{text}</button>;
+  return (
+    <button style={{ backgroundColor: color, fontSize: fontSize }} className={className} onClick={onClick}>
+      {text}
+    </button>
+  );
 };
 
 export default ColoredButton;

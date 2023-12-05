@@ -26,13 +26,13 @@ const ColoredCircle = ({ hexCode }) => {
     return <div style={circleStyle} />;
 };
 
-const ColorSection = () => {
+const ColorSection = ({setColor}) => {
     return (
         <div>
             <h1 className="color-title"> Color Scheme</h1>
             <div className="color-section">
                 {colorCodes.map((item, index) => (
-                    <StyleButton icon={<ColoredCircle hexCode={item.hexCode} />} name={item.color} onClick={null} />
+                    <StyleButton icon={<ColoredCircle hexCode={item.hexCode} />} name={item.color} onClick={() => setColor(item.color)} />
                 ))}
             </div>
         </div>
