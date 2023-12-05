@@ -29,7 +29,6 @@ function App() {
         color={color}
         imageUrl={imageUrl}
       />
-      <Footer />
     </div>
   );
 }
