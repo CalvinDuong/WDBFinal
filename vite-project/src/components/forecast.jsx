@@ -43,11 +43,11 @@ function ForeCast() {
   const [forecast, setForecast] = React.useState([]);
 
   useEffect(() => {
-    axios.get('https://api.open-meteo.com/v1/forecast?latitude=37.868951&longitude=-122.259696&daily=weather_code,apparent_temperature_min&temperature_unit=fahrenheit&timezone=auto')
+    axios.get('https://api.open-meteo.com/v1/forecast?latitude=37.868951&longitude=-122.259696&daily=weather_code,apparent_temperature_max&temperature_unit=fahrenheit&timezone=auto')
       .then(response => {
         const dates = response.data.daily.time;
         const weather = response.data.daily.weather_code;
-        const temperature = response.data.daily.apparent_temperature_min;
+        const temperature = response.data.daily.apparent_temperature_max;
         const forecastData = dates.map((date, index) => ({
           date: (new Date(date)).toLocaleDateString('en-US', { weekday: 'short', month: '2-digit', day: '2-digit' }),
           image_url: weatherImages[weather[index]],
