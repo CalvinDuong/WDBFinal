@@ -13,3 +13,7 @@ npm install
 cd vite-project -> npm run dev
 
 cd server -> node server
+
+
+https://github.com/CalvinDuong/WeatherWearAI/assets/54347713/a89fa996-6dff-415c-9e3e-69278a1587d2
+
